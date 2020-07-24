@@ -1,6 +1,7 @@
 # Documentation
 # Description
 This application can be used to calculate the zip code of any city by filtering through the country, state, and city.
+This will work on minimum python version 3.6
 
 # Installation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install flask.

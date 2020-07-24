@@ -78,7 +78,7 @@ def get_zip_code(country_id, state_id,city_id):
         print(query)
         cur = conn.execute(query)
         zip_code = cur.fetchone()
-        if len(zip_code) == 0:
+        if zip_code == None:
             return ERROR['NOT_FOUND'],ERROR['NOT_FOUND']['status_code']
         res = SUCCESS['ZIP_CODE_SUCCESS']
         res['data'] = zip_code[0]
